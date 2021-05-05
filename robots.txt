@@ -10,5 +10,5 @@ Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
 
-Sitemap: http://chenyingying.top/sitemap.xml
-Sitemap: http://chenyingying.top/baidusitemap.xml
+Sitemap: https://chenyingying.top/sitemap.xml
+Sitemap: https://chenyingying.top/baidusitemap.xml
