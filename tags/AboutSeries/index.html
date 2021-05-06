@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="YingYingChen">
+    <meta name="keywords" content="标签: AboutSeries, YingYingChen">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>YingYingChen</title>
+    <title>标签: AboutSeries | YingYingChen</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -307,56 +307,9 @@
 
 </header>
 
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -393,244 +346,108 @@
 </script>
 
 
-
-            <div class="cover-btns">
-                <a href="#articles" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-                    <a href="https://github.com/cyy-hub" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
-                    </a>
-                
-            </div>
-            <div class="cover-social-link">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        </div>
     </div>
-
-    
 </div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
-
-
 
 <main class="content">
 
     
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;叮💡
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            对于一句话，一个道理，一则故事; 重要的是体会其所揭示的智慧，而不是急于寻找与其不相符的特例。  不否认特例的存在，而且其必定存在；没必要不做一个杠精。         --小陈（国家二级抬杠运动员）
+
+<div id="tags" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
+            </div>
+            <div class="tag-chips">
+                
+                
+                <a href="/tags/Movie/" title="Movie: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Movie" style="background-color: #F9EBEA;">Movie
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/DailyJotting/" title="DailyJotting: 3">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="DailyJotting" style="background-color: #F5EEF8;">DailyJotting
+                        <span class="tag-length">3</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/TestPage/" title="TestPage: 7">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="TestPage" style="background-color: #D5F5E3;">TestPage
+                        <span class="tag-length">7</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/AboutSeries/" title="AboutSeries: 8">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="AboutSeries" style="background-color: #E8F8F5;">AboutSeries
+                        <span class="tag-length">8</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/TVShow/" title="TVShow: 4">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="TVShow" style="background-color: #FEF9E7;">TVShow
+                        <span class="tag-length">4</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/Essay/" title="Essay: 3">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="Essay" style="background-color: #F8F9F9;">Essay
+                        <span class="tag-length">3</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/DaydayUP/" title="DaydayUP: 3">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="DaydayUP" style="background-color: #82E0AA;">DaydayUP
+                        <span class="tag-length">3</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/ReadingNotes/" title="ReadingNotes: 4">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="ReadingNotes" style="background-color: #D7BDE2;">ReadingNotes
+                        <span class="tag-length">4</span>
+                    </span>
+                </a>
+                
+            </div>
         </div>
     </div>
 </div>
 
-                    
-
-                    
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
     
 
-    
-
-    <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
-        <div class="row article-row">
+        <div class="row tags-posts">
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/05/06/fan-shu-5-wo-chi-kai-zhi-hou/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="翻书5-我离开之后">
-                            
-                            <span class="card-title">翻书5-我离开之后</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%8B%A4%E8%A7%88/" class="post-category">
-                                    勤览
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/ReadingNotes/">
-                            <span class="chip bg-color">ReadingNotes</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2021/05/06/test-deploy/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="test_deploy">
-                            
-                            <span class="card-title">test_deploy</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                测试文件
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-05-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                YingYing Chen
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/TestPage/">
-                            <span class="chip bg-color">TestPage</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            <div class="article tag-post col s12 m6 l4" data-tags="AboutSeries" data-aos="fade-up">
                 <div class="card">
                     <a href="/2021/04/30/le-si-8-guan-yu-guo-cuo/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="乐思8-关于过错">
@@ -638,19 +455,7 @@
                             <span class="card-title">乐思8-关于过错</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                曾经的错该如何来弥补？只能安慰自己人谁无错？然后心安理得的继续生活？
-我活成了自己曾经和现在都鄙夷的样子，大可不必托辞人性如此。
-过往、现今、将来，唯：从心而行，后果自负。
-亏欠的，尽力去偿还吧。
-
-
-
-                            
-                        </div>
                         <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2021-04-30
@@ -660,193 +465,243 @@
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
                                 <a href="/categories/%E4%B9%90%E6%80%9D/" class="post-category">
-                                    乐思
+                                乐思
                                 </a>
                                 
                                 
                             </span>
                         </div>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/AboutSeries/">
-                            <span class="chip bg-color">AboutSeries</span>
-                        </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="AboutSeries" data-aos="fade-up">
                 <div class="card">
-                    <a href="/2021/04/29/daily-jotting-2021-04/">
-                        <div class="card-image">
+                    <a href="/2021/03/26/le-si-7-guan-yu-bu-kai-xin/">
+                        <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Daily-Jotting-2021-04">
+                            <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="乐思7-关于不开心">
                             
-                            <span class="card-title">Daily-Jotting-2021-04</span>
+                            <span class="card-title">乐思7-关于不开心</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                20210401(星期四)–四月的第一天，人间四月天应该最美好的时候吧。想在看完一本书之前找到下一本想看的书，总舍不得看完一本书。
-
-20210402(星期五)–外卖平台和商家均没赚到钱，钱去了哪里？外卖小哥兜里。在靠人力配送的时代，短途及
-                            
-                        </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-29
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-26
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
                                 <a href="/categories/%E4%B9%90%E6%80%9D/" class="post-category">
-                                    乐思
+                                乐思
                                 </a>
                                 
                                 
                             </span>
                         </div>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/DailyJotting/">
-                            <span class="chip bg-color">DailyJotting</span>
-                        </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="AboutSeries" data-aos="fade-up">
                 <div class="card">
-                    <a href="/2021/04/28/shua-ju-3-shi-nu-de-gu-shi/">
-                        <div class="card-image">
+                    <a href="/2021/03/13/le-si-6-guan-yu-zui-ai/">
+                        <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="刷剧3-使女的故事">
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="乐思6-关于最爱">
                             
-                            <span class="card-title">刷剧3-使女的故事</span>
+                            <span class="card-title">乐思6-关于最爱</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一部电影，一部剧，能够引人思考，或有所得。
-社会发展到一定的时期，生育率不断下降，很多人生不出孩子，不是不想生，就算生了也很难养活。然后就有一帮宗教极端分子起来，推翻了美国政府，建立了一个男性极权国家。把女人当作行走的子宫，生育的机器。分配
-                            
-                        </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-13
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/%E5%8B%A4%E8%A7%88/" class="post-category">
-                                    勤览
+                                <a href="/categories/%E4%B9%90%E6%80%9D/" class="post-category">
+                                乐思
                                 </a>
                                 
                                 
                             </span>
                         </div>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/TVShow/">
-                            <span class="chip bg-color">TVShow</span>
-                        </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
             
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="AboutSeries" data-aos="fade-up">
                 <div class="card">
-                    <a href="/2021/04/20/fan-shu-4-she-chi-ai-ma-shi-zong-cai-hui-yi-lu/">
-                        <div class="card-image">
+                    <a href="/2021/03/11/le-si-5-guan-yu-ming-yun/">
+                        <div class="card-image tag-image">
                             
                             
-                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="翻书4-奢侈：爱马仕总裁回忆录">
+                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="乐思5-关于命运">
                             
-                            <span class="card-title">翻书4-奢侈：爱马仕总裁回忆录</span>
+                            <span class="card-title">乐思5-关于命运</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                对我来说奢侈到底意味着什么？奢侈品到底意味着什么？
-我能想到最奢侈的东西第一个就是时间了吧。
-在这个星球上的所有地方，中产阶级们都愿意加入到这个游戏圈里来。富人们则越来越富，数量越来越大。
-获得一件名牌奢侈品成了无数人的一股欲望，一样不应拒
-                            
-                        </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-20
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-11
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/%E5%8B%A4%E8%A7%88/" class="post-category">
-                                    勤览
+                                <a href="/categories/%E4%B9%90%E6%80%9D/" class="post-category">
+                                乐思
                                 </a>
                                 
                                 
                             </span>
                         </div>
                     </div>
-
-                    
+                </div>
+            </div>
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="AboutSeries" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2021/03/10/le-si-4-guan-yu-hou-hui/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="乐思4-关于后悔">
+                            
+                            <span class="card-title">乐思4-关于后悔</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-10
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E4%B9%90%E6%80%9D/" class="post-category">
+                                乐思
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="AboutSeries" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2021/02/27/le-si-3-guan-yu-mao-dun/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="乐思3-关于矛盾">
+                            
+                            <span class="card-title">乐思3-关于矛盾</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-27
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E4%B9%90%E6%80%9D/" class="post-category">
+                                乐思
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="AboutSeries" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2021/02/26/le-si-2-guan-yu-cuo-zhe/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="乐思2-关于挫折">
+                            
+                            <span class="card-title">乐思2-关于挫折</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-26
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E4%B9%90%E6%80%9D/" class="post-category">
+                                乐思
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="AboutSeries" data-aos="fade-up">
+                <div class="card">
+                    <a href="/2021/02/21/le-si-1-guan-yu-ren-sheng-de-yi-dian-si-kao/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="乐思1-关于人生的亿点思考">
+                            
+                            <span class="card-title">乐思1-关于人生的亿点思考</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-02-21
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E4%B9%90%E6%80%9D/" class="post-category">
+                                乐思
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
             
         </div>
     </article>
-
 </main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a class="left btn-floating btn-large disabled">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">1 / 6</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/2/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
-    </div>
-</div>
 
 
 
